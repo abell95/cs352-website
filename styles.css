@@ -1,0 +1,77 @@
+.background {
+  width: 100%;
+  background-color: #995555;
+  border-bottom: 2rem solid #cc8888;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  border: 5px solid #333333;
+}
+
+.spacer {
+  margin: 2rem;
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 60%;
+  margin: auto;
+}
+
+.main-heading {
+  color: white;
+  text-align: center;
+}
+
+.heading {
+  color: #ffffff;
+}
+
+.content {
+  background-color: #fffadd;
+  width: 90%;
+  margin: auto;
+}
+
+.content-back {
+  width: 100%;
+  background-color: #e2b7b7;
+  border-bottom: 2rem solid #cc8888;
+}
+
+.banner {
+  margin: 2rem;
+  margin-bottom: 1rem;
+  border: 5px solid #2266ff;
+  background-color: #6fd6ff;
+  width: 50%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.cool-button {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.content-item {
+  width: 20rem;
+  text-align: center;
+  margin: 2.5rem;
+}
+
+.main-link {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 500;
+  color: white;
+  font-stretch: expanded;
+}
+.main-link:hover {
+  text-decoration: none;
+  text-shadow: 0 0 0.5rem #ffdddd;
+}

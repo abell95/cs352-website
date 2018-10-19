@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSA Site</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+
+<body>
+    <header class="background">
+        <div class="float-left"><a href="main.html" class="main-link" style="color: white;">
+                < BACK TO MAIN</a> </div> <div class="d-flex align-items-center spacer">
+                    <img class="profile-picture mr-4" src="harold.jpg" />
+                    <div>
+                        <h1 class="heading font-weight-bold">Joe Example's Food Stuff</h1>
+                        <h4 class="heading">Some Address Dr., Random City, USA</h4>
+                        <div class="d-flex mt-3">
+                            <button class="btn btn-primary mr-3" type="button" data-toggle="modal" data-target="#about-modal">About
+                                This Business</button>
+                        </div>
+                    </div>
+        </div>
+    </header>
+    <article class="content">
+        <div class="d-flex align-items-baseline">
+            <div class="banner">
+                <h3><b>SPECIAL DEAL:</b> <em>5lb russet potatoes + 1 gal milk for $2.50</em></h3>
+            </div>
+            <button class="cool-button btn btn-success mr-3">See Subscriber Deal ($39.99 / MO)</button>
+            <button class="cool-button btn btn-primary">Filter Items</button>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="card content-item">
+                <div class="card-body">
+                    <img src="https://via.placeholder.com/200x320" />
+                </div>
+                <div class="card-footer">
+                    <h4>Carrots!</h4>
+                    <p>$0.50 / lb</p>
+                </div>
+            </div>
+            <div class="card content-item">
+                <div class="card-body">
+                    <img src="https://via.placeholder.com/200x320" />
+                </div>
+                <div class="card-footer">
+                    <h4>Lettuce!</h4>
+                    <p>$0.75 / lb</p>
+                </div>
+            </div>
+            <div class="card content-item">
+                <div class="card-body">
+                    <img src="https://via.placeholder.com/200x320" />
+                </div>
+                <div class="card-footer">
+                    <h4>Potaters!</h4>
+                    <p>$0.40 / lb</p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- Modal -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About Joe Example's Food Company</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Joe Example started Joe Example's Foods in Some Year in Random Town, State, USA.
+                    <br /><br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id egestas odio. Suspendisse vitae
+                    consectetur risus. In blandit, nibh at efficitur aliquam, tortor ipsum feugiat enim, quis aliquet
+                    lorem libero eu arcu. Aliquam vel mattis augue. Curabitur at mi id tortor finibus viverra. Fusce
+                    vestibulum mauris eget tortor efficitur condimentum. Sed accumsan risus gravida auctor vestibulum.
+                    Ut commodo turpis a nulla placerat mattis. Proin sit amet nisi pellentesque, tristique neque porta,
+                    dictum ante.
+                    <br /><br />
+                    Ut nec quam bibendum, bibendum libero non, accumsan risus. Sed eu dolor libero. Vivamus at nunc sit
+                    amet arcu sollicitudin faucibus et nec purus. Nunc elementum tortor a blandit condimentum. Quisque
+                    scelerisque scelerisque rutrum. Quisque porttitor velit eu diam eleifend consectetur. Curabitur
+                    lobortis auctor ligula, in dapibus nunc ornare eu. Etiam ac nisl nulla.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
