@@ -4,6 +4,15 @@
   border-bottom: 2rem solid #cc8888;
 }
 
+.producer-header {
+  width: 100%;
+  background-color: #995555;
+  background-image: url("farm_banner.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-bottom: 2rem solid #cc8888;
+}
+
 .profile-picture {
   border-radius: 50%;
   width: 12rem;
@@ -15,10 +24,11 @@
   background-color: #59484f;
   color: #fff;
   font-weight: bold;
+  border-radius: 8px;
 }
 
 .fall-button:hover {
-  background-color: #64565c;
+  background-color: #776e72;
 }
 
 .spacer {
