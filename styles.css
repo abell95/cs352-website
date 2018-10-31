@@ -75,3 +75,21 @@
   text-decoration: none;
   text-shadow: 0 0 0.5rem #ffdddd;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.cool-text {
+  color: #6fd6ff;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 0;
+}
+
+td {
+  border: 1px solid grey;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
