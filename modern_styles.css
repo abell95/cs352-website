@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Trendy hipster font";
+  src: url(signika/Signika/Signika-Regular.ttf) format("woff");
+}
+
+.trendy-header {
+  padding-top: 1.5rem;
+  background-color: rgb(63, 150, 63);
+  color: white;
+  font-family: "Trendy hipster font";
+  padding-bottom: 2rem;
+  border-bottom: 1rem solid rgb(66, 139, 112);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.trendy-content {
+  background-color: white;
+  width: 70%;
+  /* margin: auto; */
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.trendy-sidebar {
+  background-color: white;
+  width: 15%;
+  /* margin: auto; */
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.boxed {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+
+.food-list-item {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.5rem;
+}
+
+.big-span {
+  font-size: 1.75rem;
+}
+
+.trendy-spacer {
+  width: 60%;
+  margin: auto;
+  left: 5rem;
+}
+
+.navbar {
+  margin-bottom: 2.5rem;
+}
+
+.nav-item,
+.nav-title {
+  color: white;
+}
+
+html,
+body {
+  background-color: rgb(130, 168, 206);
+}
