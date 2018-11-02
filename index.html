@@ -21,7 +21,8 @@
 <body>
     <header class="producer-header">
         <div class="float-left"><a href="main.html" class="main-link" style="color: white;">
-                < BACK TO MAIN</a> </div> <button class="float-right mt-5 mr-5 btn fall-button">Message This Producer</button>
+                < BACK TO MAIN</a> </div> <button class="float-right mt-5 mr-5 btn fall-button" type="button"
+                    data-toggle="modal" data-target="#message-modal">Message This Producer</button>
                     <div class="d-flex align-items-center spacer">
                         <img class="profile-picture mr-4" src="harold.jpg" />
                         <div>
@@ -204,6 +205,29 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="about-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Messaging Joe Example's Food Company</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>300 characters max</h5>
+                    <textarea placeholder="Enter here" cols="40"></textarea><br>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Sent!')">Send
+                    </button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
