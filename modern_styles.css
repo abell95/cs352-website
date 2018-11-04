@@ -3,6 +3,14 @@
   src: url(signika/Signika/Signika-Regular.ttf) format("woff");
 }
 
+p {
+  font-size: 1.25rem;
+}
+
+span {
+  font-size: 1.125rem;
+}
+
 .trendy-header {
   padding-top: 1.5rem;
   background-color: rgb(63, 150, 63);
@@ -17,7 +25,6 @@
 .trendy-content {
   background-color: white;
   width: 70%;
-  /* margin: auto; */
   padding: 2.5rem;
   border-radius: 1.2rem;
   margin-bottom: 5rem;
@@ -25,7 +32,8 @@
 
 .trendy-sidebar {
   background-color: white;
-  width: 15%;
+  width: 18%;
+  height: 35rem;
   /* margin: auto; */
   padding: 1.5rem;
   border-radius: 1.2rem;
@@ -37,6 +45,24 @@
   border-radius: 0.5rem;
 }
 
+.store-item {
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+}
+
+.store-item-col {
+  margin-right: 4rem;
+}
+
+.food-item {
+  width: 12rem;
+  height: 12rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #99bb88;
+  border: 4px solid black;
+}
+
 .food-list-item {
   border-bottom: 1px solid gray;
   padding-bottom: 0.5rem;
@@ -44,6 +70,10 @@
 
 .big-span {
   font-size: 1.75rem;
+}
+
+.stars {
+  font-size: 1.5rem;
 }
 
 .trendy-spacer {
@@ -54,6 +84,7 @@
 
 .navbar {
   margin-bottom: 2.5rem;
+  border-bottom: 0.25rem solid slategray;
 }
 
 .nav-item,
