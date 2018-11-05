@@ -25,7 +25,8 @@
             <h2 class="nav-title">Communicart</h2>
             <div class="d-flex align-items-end">
                 <a class="btn btn-info nav-item mr-5" href="#">Your Account</a>
-                <a class="btn btn-info nav-item mr-5" href="#">Your Orders</a>
+                <a class="btn btn-info nav-item mr-5" href="#" data-toggle="modal" data-target="#yourorders-modal">Your
+                    Orders</a>
                 <a class="btn btn-info nav-item mr-5" href="#">Browse Local</a>
                 <a class="btn btn-info nav-item" href="#">Log Out</a>
             </div>
@@ -39,9 +40,11 @@
                             <h1>Joe Example's Food Company</h1>
                             <span class="big-span">333 Coolio Rd. Hipster City OR</span>
                             <div class="d-flex mt-2 align-items-center">
-                                <button class="btn btn-info mr-3">Seller Details</button>
-                                <button class="btn btn-info mr-3">Delivery Schedule</button>
-                                <button class="btn btn-info">Message</button>
+                                <button class="btn btn-info mr-3" data-toggle="modal" data-target="#detail-modal">Seller
+                                    Details</button>
+                                <button class="btn btn-info mr-3" data-toggle="modal" data-target="#deliv-modal">Delivery
+                                    Schedule</button>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#message-modal">Message</button>
                             </div>
                         </div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.955636395758!2d-121.3356656846895!3d44.04297183515712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54b8c8f652fd3b79%3A0xf609f1ee033f724c!2sOregon+State+University-Cascades!5e0!3m2!1sen!2sus!4v1541368316253"
@@ -56,7 +59,7 @@
                     <div class="store-item-col">
                         <h4>Purple Potatoes <span class="bg-primary text-white mr-3 px-2">Best Seller!</span><span
                                 class="bg-success text-white px-2">Buyer's
-                                Favorite!</span></h4>
+                                Top Rated!</span></h4>
                         <h5>$0.99 / lb</h5>
                         <p class="text-danger">150 lbs left this week!</p>
                         <p class="text-primary">&#10149; This item can be delivered!</p>
@@ -78,7 +81,7 @@
                         <img class="food-item" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/4/10/0/WU0413H_roast-chicken-recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1383930058964.jpeg">
                     </figure>
                     <div class="store-item-col">
-                        <h4>Fresh Roast Chicken <span class="bg-info text-white mr-3 px-2">Seller Specialty</span></h4>
+                        <h4>Fresh Roast Chicken <span class="bg-info text-white mr-3 px-2">Producer Specialty</span></h4>
                         <h5>$4.99 / lb</h5>
                         <p class="text-danger">40 items remaining</p>
                         <p class="text-primary">&#10149; This item can be delivered!</p>
@@ -127,13 +130,318 @@
                 <h4 class="food-list-item">3 lb Beets</h4>
                 <h4 class="food-list-item">1 lb Bacon</h4>
                 <hr>
-                <h4 class="final-bucks">$37.50</h4>
+                <h4 class="final-bucks">$21.27</h4>
                 <hr>
                 <div class="d-flex justify-content-around">
                     <button class="btn btn-success">Order Now</button>
-                    <button class="btn btn-success">See Cart</button>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#cart-modal">See Cart</button>
                 </div>
             </article>
+        </div>
+    </div>
+
+    <!-- Modal contents -->
+
+    <!-- Producer details modal -->
+    <div class="modal fade" id="detail-modal" tabindex="-1" role="dialog" aria-labelledby="detail-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About Joe Example's Food Company</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="fit-image" src="farm_banner.jpg">
+                    Joe Example started Joe Example's Foods in Some Year in Random Town, State, USA.
+                    <br /><br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id egestas odio. Suspendisse vitae
+                    consectetur risus. In blandit, nibh at efficitur aliquam, tortor ipsum feugiat enim, quis aliquet
+                    lorem libero eu arcu. Aliquam vel mattis augue. Curabitur at mi id tortor finibus viverra. Fusce
+                    vestibulum mauris eget tortor efficitur condimentum. Sed accumsan risus gravida auctor vestibulum.
+                    Ut commodo turpis a nulla placerat mattis. Proin sit amet nisi pellentesque, tristique neque porta,
+                    dictum ante.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delivery schedule modal -->
+    <div class="modal fade" id="deliv-modal" tabindex="-1" role="dialog" aria-labelledby="deliv-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-primary">Delivers Biweekly</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <div class="mr-5">
+                            <h4>Delivery - 2 Days</h4>
+                            <table>
+                                <thead>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                </thead>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>No Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>1 PM to 5 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>No Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>No Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>No Delivery</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>10 AM to 8 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>No Delivery</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div>
+                            <h4>Pickup - 6 Days</h4>
+                            <table>
+                                <thead>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                </thead>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>10 AM to 8 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>10 AM to 8 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>10 AM to 5 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>10 AM to 8 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>10 AM to 4 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>10 AM to 8 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>No Pickup</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Messaging modal -->
+    <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="about-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Messaging Joe Example's Food Company</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>300 characters max</h5>
+                    <textarea placeholder="Enter here" cols="40"></textarea><br>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Sent!')">Send
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your Orders modal -->
+    <div class="modal fade" id="yourorders-modal" tabindex="-1" role="dialog" aria-labelledby="yourorders-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="yourorders-modal-label">Your Orders</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="order-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="text-primary">Order to Jim's Barbecue Fixins</h5>
+                            <div class="d-flex align-items-baseline">
+                                <p class="mr-4">1 day ago</p>
+                                <p class="mr-4">$16.34</p>
+                                <p>Status: <span class="text-primary">Preparing Order</span></p>
+                            </div>
+                        </div>
+                        <button class="float-right btn btn-info">See Details</button>
+                    </div>
+                    <div class="order-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="text-primary">Order to Samantha's Seeds</h5>
+                            <div class="d-flex align-items-baseline">
+                                <p class="mr-4">4 days ago</p>
+                                <p class="mr-4">$55.21</p>
+                                <p>Status: <span class="text-success">Picked Up!</span></p>
+                            </div>
+                        </div>
+                        <button class="float-right btn btn-info">See Details</button>
+                    </div>
+                    <div class="order-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="text-primary">Order to Ricardo's Spices</h5>
+                            <div class="d-flex align-items-baseline">
+                                <p class="mr-4">5 days ago</p>
+                                <p class="mr-4">$19.58</p>
+                                <p>Status: <span class="text-success">Delivered!</span></p>
+                            </div>
+                        </div>
+                        <button class="float-right btn btn-info">See Details</button>
+                    </div>
+                    <div class="order-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="text-primary">Order to Connie's Topiary</h5>
+                            <div class="d-flex align-items-baseline">
+                                <p class="mr-4">17 days ago</p>
+                                <p class="mr-4">$45.90</p>
+                                <p>Status: <span class="text-danger">Cancelled</span></p>
+                            </div>
+                        </div>
+                        <button class="float-right btn btn-info">See Details</button>
+                    </div>
+                    <div class="order-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="text-primary">Order to Edith's Healthy Greens</h5>
+                            <div class="d-flex align-items-baseline">
+                                <p class="mr-4">28 days ago</p>
+                                <p class="mr-4">$65.57</p>
+                                <p>Status: <span class="text-success">Delivered!</span></p>
+                            </div>
+                        </div>
+                        <button class="float-right btn btn-info">See Details</button>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-info float-right" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- See Cart Modal -->
+    <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cart-modal-label" aria-hidden="true">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-primary" id="cart-modal-label">Your Current Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between food-list-item mb-2">
+                        <h4 class="text-info">From Joe Example's Food Company</h4>
+                        <button class="btn btn-info">Go to storefront</button>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-baseline">
+                                <h5>3 lb Purple Potatoes</h5>
+                                <pre> ..... </pre>
+                                <span>$3.00</span>
+                            </div>
+                            <span class="closer bg-danger">&times;</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-baseline">
+                                <h5>Chicken Pot Pie Recipe Box</h5>
+                                <pre> ..... </pre>
+                                <span>$7.50</span>
+                            </div>
+                            <span class="closer bg-danger">&times;</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-baseline">
+                                <h5>3 lb Beets</h5>
+                                <pre> ..... </pre>
+                                <span>$3.87</span>
+                            </div>
+                            <span class="closer bg-danger">&times;</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between food-list-item mb-2">
+                        <h4 class="text-info">From Tommy's Breakfast Bits</h4>
+                        <button class="btn btn-info">Go to storefront</button>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-baseline">
+                                <h5>2 lb Carrots</h5>
+                                <pre> ..... </pre>
+                                <span>$1.40</span>
+                            </div>
+                            <span class="closer bg-danger">&times;</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-baseline">
+                                <h5>1 lb Bacon</h5>
+                                <pre> ..... </pre>
+                                <span>$5.50</span>
+                            </div>
+                            <span class="closer bg-danger">&times;</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Total: $21.27</h4>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Go To Checkout
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
