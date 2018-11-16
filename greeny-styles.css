@@ -28,9 +28,11 @@ nav {
 }
 
 .banner-top-text {
-  width: 70%;
+  width: 80%;
   text-align: center;
   margin: auto;
   font-weight: bold;
   top: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
 }
