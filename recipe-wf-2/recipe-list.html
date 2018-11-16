@@ -16,18 +16,45 @@
         crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="../styles.css" type="text/css">
     <link rel="stylesheet" href="../modern_styles.css" type="text/css"> -->
+
 <style>
     .ingredients-list {
         transition: max-height 0.5s;
         transition-timing-function: linear;
         max-height: 30px;
-            overflow: hidden;
+        overflow: hidden;
     }
     .ingredients-list:hover {
         max-height: 200px;
-            overflow: hidden;
+        overflow: hidden;
+    }
+    .button.is-info {
+        color: #fff !important;
+    }
+    a:hover {
+        text-decoration: none;
     }
 </style>
+<script>
+	document.addEventListener("DOMContentLoaded", go)
+	function go() {
+		function showModal() {
+			document.getElementsByClassName("modal")[0].classList.add("is-active")
+		}
+		function hideModal() {
+			document.getElementsByClassName("modal")[0].classList.remove("is-active")
+		}
+		document.getElementById("get").addEventListener("click", e => {
+			showModal()
+		})
+		document.getElementsByClassName("delete")[0].addEventListener("click", e => {
+			hideModal()
+		})
+		document.getElementById("cancel-modal").addEventListener("click", e => {
+			hideModal()
+		})
+	}		
+</script>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-primary">
@@ -114,6 +141,11 @@
                                 </div>
                             </p>
                         </div>
+                        <div class="control">
+                            <a id="get" class="button is-info">
+                                Get all ingredients
+                            </a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -159,6 +191,11 @@
                                     </table>
                                 </div>
                             </p>
+                        </div>
+                        <div class="control">
+                            <a id="get" class="button is-info">
+                                Get all ingredients
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -206,6 +243,11 @@
                                 </div>
                             </p>
                         </div>
+                        <div class="control">
+                            <a id="get" class="button is-info">
+                                Get all ingredients
+                            </a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -250,12 +292,66 @@
                                         </tr>
                                     </table>
                                 </div>
-
                             </p>
+                        </div>
+                        <div class="control">
+                            <a id="get" class="button is-info">
+                                Get all ingredients
+                            </a>
                         </div>
                     </div>
                 </article>
             </div>
+            <div class="modal">
+             <div class="modal-background"></div>
+             <div class="modal-card">
+                 <header class="modal-card-head">
+                     <p class="modal-card-title">Ordering all ingredients for bee soup</p>
+                     <button class="delete" aria-label="close"></button>
+                 </header>
+                 <section class="modal-card-body ">
+                     <div class="content">
+                     We found these sources for the ingredients in the recipe you selected. You can make changes to these sources in your cart before ordering.
+                     <table>
+                        <tr>
+                            <th>Thing</th>
+                            <th>Source</th>
+                            <th>Delivery method</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Bee</td>
+                            <td>Bjorg Heapmaker</td>
+                            <td>Pickup <a href="#">(details)</a></td>
+                            <td>$9000</td>
+                        </tr>
+                        <tr>
+                            <td>Pea</td>
+                            <td>Bjorg Heapmaker</td>
+                            <td>Pickup <a href="#">(details)</a></td>
+                            <td>$1</td>
+                        </tr>
+                        <tr>
+                            <td>Tree</td>
+                            <td>Wegheak Grumbulon</td>
+                            <td>Deivery <a href="#">(details)</a></td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th></th>
+                            <th></th>
+                            <th>$9301</th>
+                        </tr>
+                     </table>
+                     </div>
+                 </section>
+                 <footer class="modal-card-foot">
+                     <button class="button is-success">Confirm selection</button>
+                     <button id="cancel-modal" class="button">Cancel</button>
+                 </footer>
+             </div>
+          </div>
         </div>
 </body>
 </html>
