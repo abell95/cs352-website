@@ -1,0 +1,36 @@
+:root {
+  --dark-blue: #133840;
+  --dark-green: #2b4b40;
+  --light-green: #92a73e;
+  --cream: #fef49d;
+  --light-brown: #b48c59;
+  --teal: #49695e;
+}
+
+nav {
+  background-color: var(--light-green);
+}
+
+.btn {
+  background-color: var(--dark-green);
+  border: 0;
+}
+
+.back-banner {
+  background-image: url("./farmers.jpg");
+  width: 60%;
+  object-fit: contain;
+  height: 20rem;
+  margin: auto;
+  background-color: var(--cream);
+  background-blend-mode: multiply;
+  text-align: center;
+}
+
+.banner-top-text {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  top: 50%;
+}
