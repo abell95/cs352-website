@@ -26,9 +26,9 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="./styles.css" type="text/css" /> -->
     <link rel="stylesheet" href="./greeny-styles.css" type="text/css" />
-    <script src="main.js"></script>
+    <script src="landing.js"></script>
   </head>
 
   <body>
@@ -47,11 +47,91 @@
       </div>
     </nav>
     <article class="content">
-      <br /><br /><br />
+      <br />
       <div class="back-banner d-flex align-items-center">
         <h1 class="text-white banner-top-text">
           Communicart brings local agriculture to your doorstep.
         </h1>
+      </div>
+      <div class="mx-auto searchbar">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">&#x1F50D;</div>
+          </div>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="searchbar"
+            placeholder="What are you looking for today?"
+          />
+        </div>
+      </div>
+      <div class="filter-settings d-flex align-items-center">
+        <span class="mr-4">Filters:</span>
+        <div class="form-check mr-4">
+          <input
+            class="form-check-input big-box"
+            type="checkbox"
+            value=""
+            id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1"> Delivery </label>
+        </div>
+        <div class="form-check mr-4">
+          <input
+            class="form-check-input big-box"
+            type="checkbox"
+            value=""
+            id="defaultCheck2"
+          />
+          <label class="form-check-label" for="defaultCheck2"> Vegan </label>
+        </div>
+        <div class="form-check mr-4">
+          <input
+            class="form-check-input big-box"
+            type="checkbox"
+            value=""
+            id="defaultCheck3"
+          />
+          <label class="form-check-label" for="defaultCheck3">
+            <div class="d-flex align-items-center">
+              <span class="mr-2"> Within </span>
+
+              <div class="dropdown mr-2">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  X
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">10</a>
+                  <a class="dropdown-item" href="#">25</a>
+                  <a class="dropdown-item" href="#">50</a>
+                </div>
+              </div>
+              miles
+            </div>
+          </label>
+        </div>
+        <div class="form-check mr-4">
+          <input
+            class="form-check-input big-box"
+            type="checkbox"
+            value=""
+            id="defaultCheck4"
+          />
+          <label class="form-check-label" for="defaultCheck4">
+            Seasonals
+          </label>
+        </div>
+      </div>
+      <div>
+        <h2>You searched for... <span id="searched-for"></span></h2>
       </div>
       <div id="mappy" class="d-flex align-items-center">
         <!--
