@@ -5,16 +5,17 @@
   --cream: #fef49d;
   --light-brown: #b48c59;
   --teal: #49695e;
+  --silver: #eee;
 }
 
 body {
-  background-color: var(--dark-blue);
+  background-color: white;
 }
 .content {
   width: 80%;
   border-left: 5px double black;
   border-right: 5px double black;
-  background-color: var(--light-brown);
+  background-color: var(--silver);
   margin: auto;
 }
 
